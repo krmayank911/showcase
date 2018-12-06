@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LauncherActivity"
+    android:background="@color/themeBackgroundColor">
+
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_above="@id/launcher_options"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/themeText_20"
+        android:textAllCaps="true"
+        android:textColor="@color/textBlackHeading"
+        android:text="@string/app_name"
+        android:layout_margin="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/launcher_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/button_capture_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_capture_image"
+            style="@style/textButton"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/bg_text_button"
+            android:textColor="@color/themeColorSecondary"/>
+
+        <TextView
+            android:id="@+id/button_show_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_images_list"
+            android:layout_centerInParent="true"
+            style="@style/textButton"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/bg_text_button"
+            android:textColor="@color/themeColorSecondary"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

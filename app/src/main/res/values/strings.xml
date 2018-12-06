@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Showcase</string>
+
+    <string name="label_capture_image">Upload</string>
+    <string name="label_images_list">ImageList</string>
+
+
+</resources>

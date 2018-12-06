@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- theme Scarlet -->
+    <color name="themeColorPrimary">#FFFFFF</color>
+    <color name="themeColorSecondary">#ff2c80</color>
+    <color name="themeColorSecondaryDark">#931c38</color>
+    <color name="themeColorAccent">#2cffab</color>
+    <color name="themeColorAccentDark">#167f55</color>
+    <color name="themeColorAccentLight">#5ba588</color>
+    <color name="themeIconTint">#ff2c80</color>
+    <color name="themeIconTintInverse">#EEEFEE</color>
+    <color name="themeTintDark">#353535</color>
+    <color name="themeFeedBack">#fb81b1</color>
+    <color name="themeFeedBackInverse">#a2a2a2</color>
+    <color name="themeBackgroundColor">#F6F7EB</color>
+
+    <color name="textBlack">#222222</color>
+    <color name="textBlackHeading">#4e4e4e</color>
+
+    <!-- transparency codes
+    100% — FF
+    95% — F2
+    90% — E6
+    85% — D9
+    80% — CC
+    75% — BF
+    70% — B3
+    65% — A6
+    60% — 99
+    55% — 8C
+    50% — 80
+    45% — 73
+    40% — 66
+    35% — 59
+    30% — 4D
+    25% — 40
+    20% — 33
+    15% — 26
+    10% — 1A
+    5%  — 0D
+    0% —  00
+    -->
+
+</resources>

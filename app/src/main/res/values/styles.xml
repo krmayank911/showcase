@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/themeColorSecondary</item>
+        <item name="colorPrimaryDark">@color/themeColorSecondaryDark</item>
+        <item name="colorAccent">@color/themeColorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoToolBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="colorControlActivated">@color/themeColorSecondary</item>
+        <item name="colorControlHighlight">@color/themeColorSecondary</item>
+    </style>
+
+    <style name="themeText_20">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textBlack</item>
+    </style>
+
+    <style name="themeText_18">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textBlack</item>
+    </style>
+
+    <style name="themeText_16">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textBlack</item>
+    </style>
+
+    <style name="themeText_14">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textBlack</item>
+    </style>
+
+    <style name="themeText_12">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textBlack</item>
+    </style>
+
+    <style name="textButton">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+</resources>
