@@ -128,8 +128,12 @@ public class PreviewActivity extends AppCompatActivity implements View.OnClickLi
                     //get the returned data
                     Bundle extras = data.getExtras();
                     //get the cropped bitmap
-                    Bitmap thePic = extras.getParcelable("data");
-                    saveImage(thePic);
+                    if(extras != null) {
+                        Bitmap thePic = extras.getParcelable("data");
+                        saveImage(thePic);
+                    }else {
+                        Toast.makeText(this,"Something went wrong",Toast.LENGTH_SHORT);
+                    }
                 }
             }
         }

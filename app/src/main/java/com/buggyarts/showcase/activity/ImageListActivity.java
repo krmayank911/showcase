@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.buggyarts.showcase.R;
 import com.buggyarts.showcase.adapters.ImagesAdapter;
@@ -36,8 +37,13 @@ public class ImageListActivity extends AppCompatActivity implements ImagesAdapte
         imagesRV = findViewById(R.id.images_rv);
         layoutManager = new LinearLayoutManager(this);
         imagesRV.setLayoutManager(layoutManager);
-        showcaseImages = AppUtils.getList(this);
-        adapter = new ImagesAdapter(this,showcaseImages);
+        ArrayList<String> bufferList = AppUtils.getList(this);
+        if(bufferList != null) {
+            showcaseImages = bufferList;
+        }else {
+            Toast.makeText(this,"Image List Empty",Toast.LENGTH_SHORT).show();
+        }
+        adapter = new ImagesAdapter(this, showcaseImages);
         adapter.setCallback(this);
         imagesRV.setAdapter(adapter);
 
