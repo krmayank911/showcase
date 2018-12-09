@@ -4,5 +4,7 @@
     <string name="label_capture_image">Upload</string>
     <string name="label_images_list">ImageList</string>
 
+    <string name="label_camera">Camera</string>
+    <string name="label_gallery">Gallery</string>
 
 </resources>

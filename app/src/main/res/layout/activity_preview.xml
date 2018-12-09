@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PreviewActivity">
+
+    <com.buggyarts.showcase.customClasses.ImagePreviewView
+        android:id="@+id/imagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/button_crop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_crop_32dp"
+        android:background="@drawable/bg_text_button"
+        android:layout_margin="20dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/themeText_16"
+        android:text="DONE"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_text_button"
+        android:textColor="@color/themeColorSecondary"/>
+
+</RelativeLayout>

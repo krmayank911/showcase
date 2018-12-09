@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.buggyarts.showcase.R;
+import com.buggyarts.showcase.cameraWork.Camera2Activity;
 
 public class LauncherActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -38,6 +39,8 @@ public class LauncherActivity extends AppCompatActivity implements View.OnClickL
 
         }else if(view.getId() == R.id.button_show_images){
 
+            Intent intent = new Intent(LauncherActivity.this, ImageListActivity.class);
+            startActivity(intent);
         }
     }
 

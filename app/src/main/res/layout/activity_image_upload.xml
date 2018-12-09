@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.ImageUploadAcitivty">
+    android:id="@+id/root_view"
+    tools:context=".activity.ImageUploadAcitivty"
+    android:background="@color/themeBackgroundColor">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/capturedImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/upload"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/options"
+        android:layout_marginBottom="20dp"
+        style="@style/themeText_16"
+        android:textColor="@color/themeColorSecondary"
+        android:text="UPLOAD"
+        android:padding="10dp"
+        android:background="@drawable/bg_text_button"/>
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@color/themeColorSecondaryDark"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/camera"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/label_camera"
+            style="@style/themeText_20"
+            android:textColor="@color/themeColorPrimary"
+            android:textAllCaps="true"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/gallery"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/label_gallery"
+            style="@style/themeText_20"
+            android:textColor="@color/themeColorPrimary"
+            android:textAllCaps="true"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
